@@ -1,0 +1,77 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Globales */
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Header y Navegacion */
+
+.nombre-sitio {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.nombre-sitio span {
+  color: #037bc0;
+}
+
+.contenedor-navegacion {
+  border-top: 1px solid #e1e1e1;
+}
+
+.nav-principal {
+  padding: 20px 0;
+}
+
+.hero {
+  background-image: url(../img/principal.jpg);
+  height: 550px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Formas de Escribir codigo CSS. Modulos, BEM, SMACSS */
+
+/* En modulos se selecciona una clase y de ahi se va seleccionando cada uno de sus elementos*/
+
+.enlace {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  color: #037bc0;
+}
+
+/* BOX MODEL */
+
+/* Contenido, padding, borde, margin */
+/* El tamaño se define por estas 4 propiedades. */
+
+/* Displays */
+
+/* Display Block */
+
+/* Significa que este se acomodara por debajo del otro sin importar el tamaño o el contenido */
+/* Display Inline */
+
+/* Se acomodara a la derecha una vez haya tomado el espacio que requiere */
+
+/* Display inline-block */
+
+/* Permite darle Width, height, margin a un elemento inline, lo cual no es posible a uno inline. */
