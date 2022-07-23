@@ -14,8 +14,11 @@ html {
 }
 
 /* Globales */
+/* !important       ID   classes    elemento             */
+/*      0           1       0         0       */
 
-a {
+/* 0 0 1 1 */
+.nav-principal a {
   text-decoration: none;
   color: #000;
 }
@@ -51,12 +54,12 @@ a {
 
 /* En modulos se selecciona una clase y de ahi se va seleccionando cada uno de sus elementos*/
 
-.enlace {
+/* .enlace {
   text-transform: uppercase;
   font-weight: bold;
   text-decoration: none;
   color: #037bc0;
-}
+} */
 
 /* BOX MODEL */
 
