@@ -8,9 +8,18 @@ html {
   box-sizing: inherit;
 }
 
+a {
+  text-decoration: none;
+  color: #000;
+}
+
 .contenedor {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
 }
 
 /* Globales */
@@ -18,10 +27,11 @@ html {
 /*      0           1       0         0       */
 
 /* 0 0 1 1 */
-.nav-principal a {
+
+/* .nav-principal a {
   text-decoration: none;
   color: #000;
-}
+} */
 
 /* Header y Navegacion */
 
@@ -39,8 +49,29 @@ html {
   border-top: 1px solid #e1e1e1;
 }
 
+/* Flexbox */
+
+/*  Se le tiene que aplicar display: flex; al elemento padre de lo que se quiere acomodar. En este caso para acomodar los enlaces con flexbox tenemos que aplicar display: flex; a .nav-principal. */
+
+/* Flexbox solo afecta al primer nivel de hijos del contenedor.  */
+
+/* Justify content
+    Si el flex-direction es row
+      alineara el contenido horizontalmente
+    si no, lo alineara verticalmente. */
+/* Align items 
+    Si el flex-direction es row, alineara los items verticalmente
+    si no, los alineara horizontalmente. */
+
+/* CSS Grid  */
+/* Permite definir la ubicacion y tamaño de el sitio web.  */
+/* Flexbox y CSS Grid se complementan a si mismos. */
+
 .nav-principal {
   padding: 20px 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .hero {
@@ -48,6 +79,7 @@ html {
   height: 550px;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
 }
 
 /* Formas de Escribir codigo CSS. Modulos, BEM, SMACSS */
@@ -78,3 +110,12 @@ html {
 /* Display inline-block */
 
 /* Permite darle Width, height, margin a un elemento inline, lo cual no es posible a uno inline. */
+
+/* Categorias */
+
+.listado-categorias {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
