@@ -111,6 +111,37 @@ img {
 
 /* En modulos se selecciona una clase y de ahi se va seleccionando cada uno de sus elementos*/
 
+/* BEM - Block Element Modifier */
+/* .card { }  - Bloque
+.card__titulo {} - Bloque__Elemento 
+.card__titulo--activo {} - Bloque__elemento--modificador*/
+
+/* Utilidades */
+/* .text-center {} */
+/* .color-red-100 {} */
+/* .bg-blue-200 */
+/* .p-2 */
+/* .m-2 */
+
+/* Modulos CSS */
+/* .card {} */
+/* .card h2 {} */
+/* .card img {} */
+/* .card p {} */
+
+/* SMACSS */
+/* Trata de ver que elementos css comparten estilos entre ellos y agruparlos */
+/* #header, #article, #footer {
+  width:960px;
+  margin: auto;
+} */
+/* Si tiene alguna propiedad distinta se crea su propio selector 
+  #article {
+    border: solid #CCC;
+    border-width: 1px 0 0;
+  }
+*/
+
 /* .enlace {
   text-transform: uppercase;
   font-weight: bold;
