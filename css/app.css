@@ -21,6 +21,15 @@ h1,
 h2,
 h3 {
   font-family: "Playfair Display", serif;
+  margin: 0 0 5rem 0;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 4rem;
 }
 
 h3 {
@@ -56,9 +65,7 @@ img {
 
 .nombre-sitio {
   margin-top: 5rem;
-  margin-bottom: 5rem;
   text-align: center;
-  font-size: 4rem;
 }
 
 /* % toma el valor de la medido del contenedor padre. */
@@ -102,10 +109,10 @@ img {
 
 .hero {
   background-image: url(../img/principal.jpg);
-  height: 55rem;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  height: 55rem;
 }
 
 /* Formas de Escribir codigo CSS. Modulos, BEM, SMACSS 
@@ -171,6 +178,10 @@ img {
 
 /* Categorias */
 
+.categorias {
+  padding-top: 5rem;
+}
+
 .categorias h2 {
   text-align: center;
 }
@@ -204,3 +215,34 @@ img {
 /* Toman su valor en base a otro elemento */
 /* em, rem, vh, vw */
 /* Se adaptan mejora a diferentes resoluciones y densidades de pixeles. Lo cual lo hace mejor opcion. */
+
+/* Sobre nosotros */
+
+.sobre-nosotros {
+  margin-top: 5rem;
+  background-image: linear-gradient(
+      to right,
+      transparent 50%,
+      #037bc0 50%,
+      #037bc0 100%
+    ),
+    url("../img/nosotros.jpg");
+  background-position: left center;
+  padding: 10rem 0;
+  background-repeat: no-repeat;
+  background-size: 100%, 120rem;
+}
+
+/* Flexbox se utiliza para la alineacion o distribucion de los elementos que estaran dentro de los contenedores */
+/* Grid para definir el layout de tu sitio web, columnas. contenedores de elementos etc. */
+
+.sobre-nosotros-grid {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.texto-nosotros {
+  flex-basis: 50%;
+  padding-left: 6rem;
+  color: #fff;
+}
