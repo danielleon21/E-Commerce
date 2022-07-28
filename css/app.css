@@ -363,3 +363,22 @@ img {
   margin-top: 5rem;
   text-align: center;
 }
+
+/* Pagina interna Sobre Nosotros */
+
+.sobre-nosotros-container {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.sobre-nosotros-container img {
+  height: 30rem;
+  object-fit: cover;
+}
+
+.sobre-nosotros-container p {
+  margin-top: 0;
+}
