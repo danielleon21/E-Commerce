@@ -376,5 +376,4 @@ img {
 .informacion-nosotros {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
