@@ -31,6 +31,70 @@
 
       <main class="contenido-principal contenedor">
         <h2 class="text-center">Contacto</h2>
+        <form class="formulario">
+          <fieldset>
+            <legend>Datos Personales</legend>
+            <div class="campo">
+              <label for="nombre">Nombre: </label>
+              <input id="nombre" type="text" placeholder="Tu Nombre" />
+            </div>
+            <div class="campo">
+              <label for="asunto">Asunto: </label>
+              <input type="text" id="asunto" placeholder="Tu Asunto" />
+            </div>
+            <div class="campo">
+              <label for="email">E-mail: </label>
+              <input type="email" id="email" placeholder="Tu Email" />
+            </div>
+            <div class="campo">
+              <label for="tel">Telefono: </label>
+              <input type="tel" id="tel" placeholder="Tu Telefono" />
+            </div>
+            <div class="campo">
+              <label for="mensaje">Mensaje: </label>
+              <textarea id="mensaje"></textarea>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Pais</legend>
+            <div class="campo">
+              <label for="pais">Mensaje: </label>
+              <select id="pais">
+                <option disabled>-- Seleccione --</option>
+                <option value="MX">México</option>
+                <option value="PR">Perú</option>
+                <option value="CO">Colombia</option>
+                <option value="AR">Argentina</option>
+                <option value="ES">España</option>
+                <option value="CL">Chile</option>
+              </select>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Informacion Extra</legend>
+            <div class="campo">
+              <label for="cliente">Cliente</label>
+              <!-- Se le puede agregar el atributo value que es lo que se enviara al servidor. -->
+              <input type="radio" id="cliente" name="tipo" />
+            </div>
+            <div class="campo">
+              <label for="proveedor">Proveedor</label>
+              <input type="radio" id="proveedor" name="tipo" />
+            </div>
+            <div class="campo">
+              <label for="categoria">Categoria de Interes</label>
+              <input list="categorias" name="categorias" />
+              <datalist id="categorias">
+                <option value="Cocina"></option>
+                <option value="Exterior"></option>
+                <option value="Recamara"></option>
+                <option value="Oficina"></option>
+                <option value="Television"></option>
+              </datalist>
+            </div>
+          </fieldset>
+          <input type="submit" value="Enviar Formulario" class="btn" />
+        </form>
       </main>
       <footer class="site-footer">
         <div class="grid-footer contenedor">
